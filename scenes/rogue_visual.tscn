@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cwfs0phoyfdvl"]
+
+[ext_resource type="PackedScene" uid="uid://b7rnxfebwtrbx" path="res://assets/adventures/characters/gltf/Rogue.glb" id="1_3pq7i"]
+[ext_resource type="AnimationLibrary" uid="uid://u0y5q4uckpl6" path="res://assets/adventures/animations/Rig_Medium/Rig_Medium_MovementBasic.glb" id="2_mrvjg"]
+
+[node name="Rogue" unique_id=2120122407 instance=ExtResource("1_3pq7i")]
+
+[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(2067216900) index="0" unique_id=1837498851]
+bones/1/position = Vector3(4.3561184e-18, 0.36031148, 1.0385796e-24)
+bones/2/position = Vector3(0.17094506, 0.113587275, 0.020000014)
+bones/2/rotation = Quaternion(0.945631, -1.5636915e-07, -2.0594548e-10, 0.32524145)
+bones/3/rotation = Quaternion(0.3766119, 6.3959284e-08, -2.6154382e-07, 0.9263712)
+bones/4/rotation = Quaternion(-0.644513, -4.2805716e-08, 2.3152316e-08, 0.76459336)
+bones/5/rotation = Quaternion(2.132097e-08, 0.9201128, -0.39165363, 6.444806e-08)
+bones/6/position = Vector3(-0.17094506, 0.08358726, -0.01999999)
+bones/6/rotation = Quaternion(0.99897593, 2.624242e-07, 3.6084767e-08, -0.04524396)
+bones/7/rotation = Quaternion(0.6983515, -4.941781e-08, 4.8498094e-07, 0.71575505)
+bones/8/rotation = Quaternion(-0.73754084, 3.0264854e-07, -2.9557052e-07, 0.67530257)
+bones/9/rotation = Quaternion(8.9115744e-08, 0.91967595, -0.39267838, 7.534388e-08)
+bones/10/rotation = Quaternion(1.1351584e-10, 8.460577e-09, -0.043619394, 0.99904823)
+bones/11/rotation = Quaternion(1.12650264e-10, -8.440784e-09, 0.043619394, 0.99904823)
+bones/12/position = Vector3(-0.21200734, 0.13413227, 8.5732175e-08)
+bones/12/rotation = Quaternion(-0.6190137, 0.39046597, 0.5528969, 0.39832586)
+bones/13/rotation = Quaternion(1.8738875e-08, 3.8900133e-08, 0.5587805, 0.8293156)
+bones/15/rotation = Quaternion(-0.22438431, 0.51277065, 0.09602212, 0.82310253)
+bones/16/rotation = Quaternion(1.6805918e-09, -1.6805916e-09, 0.7071068, 0.7071067)
+bones/17/rotation = Quaternion(0, 2.283618e-20, 0, 1)
+bones/18/position = Vector3(0.21200734, 0.13413227, 8.480239e-08)
+bones/18/rotation = Quaternion(-0.7097659, 0.10333039, -0.31592265, 0.62108636)
+bones/19/rotation = Quaternion(2.4159936e-08, -7.09111e-08, -0.66050684, 0.7508201)
+bones/21/rotation = Quaternion(-0.45201764, -0.08527638, -0.055035196, 0.8862162)
+bones/22/rotation = Quaternion(1.6806099e-09, 1.680615e-09, -0.7071068, 0.7071067)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Rig_Medium/Skeleton3D" index="7" unique_id=1082814839]
+root_node = NodePath("../../..")
+libraries/Rig_Medium_MovementBasic = ExtResource("2_mrvjg")
